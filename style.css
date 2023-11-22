@@ -1,0 +1,155 @@
+body {
+  margin: 5% 15%;
+  background-color: #476e9e;
+}
+
+/* główne pole */
+.mainField {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 100px 0.5fr 1fr;
+  grid-template-areas: "measure addWater userData";
+  grid-column-gap: 20px;
+  justify-content: space-between;
+  border: 3px solid #476e9e;
+  border-radius: 25px;
+  padding: 40px;
+  background-color: white;
+}
+
+/*każdy kolumna to flex */
+
+.addWater {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+/* progress bar */
+
+.measure {
+  
+  width: 45px;
+  height: 400px;
+  background-color: #E9E9E9;
+  transform: rotate(180deg);
+  border: 1px solid #4e6096;
+  justify-self: center;
+  
+}
+
+.progressBar {
+  width: 45px;
+  height: 0px;
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  
+  
+}
+
+/* przyciski dodawania kolejnych szklanek */
+
+.capacity, .myOwnCapacity {
+  margin: 10px;
+  box-shadow: 0px 1px 0px 2px #9fb4f2;
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 25px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 21px;
+  padding: 13px 65px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+}
+.capacity:hover, .myOwnCapacity:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.capacity:active, .myOwnCapacity:active {
+  position: relative;
+  top: 1px;
+}
+
+/* dodaj własną objętość */
+
+.addOwnCapacity {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ownCapacity {
+    width: 50%;
+    appearance: none;
+    border-radius: 25px;
+    color: #476e9e;
+    font-size: 1.5em;
+    padding: 10px 20px;
+}
+
+.myOwnCapacity {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+/* kolumna User Data */
+
+.hello {
+  font-size: 24px;
+  border: 3px solid #476e9e;
+  border-radius: 25px;
+  padding: 10px 30px;
+  margin-bottom: 25px;
+}
+
+.userData {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 3px solid #476e9e;
+  border-radius: 25px;
+  padding: 10px 30px;
+  margin-bottom: 25px;
+}
+
+.userDataHeader {
+  font-weight: bold;
+  color: #476e9e
+}
+
+.myGoals {
+  border: 3px solid #476e9e;
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+
+.capacityGoal {
+  font-weight: bold;
+}
+
+/* dodane szklanki wody */
+
+.todayIDrink {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.glassOfWater {
+  border: 1px solid #476e9e;
+  padding: 5px;
+  margin: 5px 10px 5px 0;
+  border-radius: 10px;
+}
+
+
+
+

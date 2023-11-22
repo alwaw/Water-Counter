@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wodomierz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainField">
+      <div class="measure">
+        <div class="progressBar">
+          
+        </div>
+      </div>
+
+      <div class="addWater">
+        <button class="capacity"><span class="capacityValue">250 ml</span></button>
+        <button class="capacity"><span class="capacityValue">300 ml</span></button>
+        <button class="capacity"><span class="capacityValue">400 ml</span></button>
+        <button class="capacity"><span class="capacityValue"></span>500 ml</button>
+        <div class = "addOwnCapacity">
+        <input type="text" class="ownCapacity" placeholder="ml" />
+        <button class="myOwnCapacity">Dodaj</button>
+        </div>
+      </div>
+
+      <div class="UserDataWrapper">
+        <div class="hello">Miło Cię widzieć, <span class="name"></span></div>
+
+        <div class="userData">
+          <span class="userDataHeader">Twoje dane:</span>
+          <span class="userDataWeight"
+            >Waga: <span class="userWeight"></span>
+          </span>
+          <!--Przyjmuje się, że osoba dorosła na każdy kilogram masy ciała potrzebuje około 35 ml wody.-->
+        </div>
+
+        <div class="myGoals">
+          <span class="capacityGoalHeader"
+            >Twoje dzienne zapotrzebowanie na wodę wynosi
+            <span class="capacityGoal"></span>.
+          </span>
+          <span>
+            <br> Twoje dzisiejsze spożycie wody:
+          </span>
+          <ul class="todayIDrink">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+    
+
+  </body>
+</html>
