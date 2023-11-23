@@ -37,21 +37,28 @@ export class StartWaterMeasure {
       button.addEventListener("click", () => {
         // console.log(button.textContent);
         this.selectedCapacity = button.textContent;
-        console.log("selected Capacity: " + this.selectedCapacity);
         this.addWater.addWaterToTheList(this.selectedCapacity);
         this.addWater.addWaterToProgressBar(
           this.selectedCapacity,
           this.capacityGoal
         );
+        this.addWater.addToHeader(this.selectedCapacity, this.capacityGoal);
       });
     });
 
     // pobieram samodzielnie wpisaną pojemność:
     this.myOwnCapacityBtn.addEventListener("click", () => {
       const capacityInput = this.myOwnCapacityInput.value;
-      console.log(this.valueofcapacity);
-      this.addWater.addWaterToTheList(capacityInput);
+      if (isNaN(capacityInput) === true || capacityInput <= 0) {
+        alert("Proszę o wpisanie poprawnej pojemności.")
+      } else {
+      this.addWater.addWaterToTheList(capacityInput+" ml");
       this.addWater.addWaterToProgressBar(capacityInput, this.capacityGoal);
+      this.addWater.addToHeader(capacityInput, this.capacityGoal);
+      this.myOwnCapacityInput.value = "";
+      }
     });
+
+
     
 }}

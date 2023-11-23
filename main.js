@@ -4,15 +4,14 @@ import {StartWaterMeasure} from "./StartWaterMeasure.js" ;
 const letsDrinkWater = new StartWaterMeasure();
 
 //TODO 
-//zrobić walidację do samodzielnie wpisanej wartości
 
-//dodać do fielda z podażą wody informację: 
-//Wypiłeś xxx ml z zzz ml
+
+// procenty przy słupku nie mogą latać (np. podczas gdy rozszerza się pole "Udało Ci się wypić...")
 
 //dodać nagrodę :-))))
 
 //dodać przypomnienia
 
-//dodać czyszczenie pola z inputem
+
 
 //ogarnąć css

@@ -1,6 +1,10 @@
+:root {
+  --mainColor: #476e9e;
+}
+
 body {
   margin: 5% 15%;
-  background-color: #476e9e;
+  background-color: var(--mainColor);
 }
 
 /* główne pole */
@@ -11,7 +15,7 @@ body {
   grid-template-areas: "measure addWater userData";
   grid-column-gap: 20px;
   justify-content: space-between;
-  border: 3px solid #476e9e;
+  border: 3px solid var(--mainColor);
   border-radius: 25px;
   padding: 40px;
   background-color: white;
@@ -27,14 +31,28 @@ body {
 
 /* progress bar */
 
+.progressBarField {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.progressBarPercent {
+  align-self: center;
+  color: var(--mainColor);
+  font-size: 25px;
+  
+}
+
 .measure {
   
   width: 45px;
   height: 400px;
   background-color: #E9E9E9;
   transform: rotate(180deg);
-  border: 1px solid #4e6096;
+  border: 1px solid var(--mainColor);
   justify-self: center;
+  
   
 }
 
@@ -43,15 +61,16 @@ body {
   height: 0px;
   background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
   
-  
 }
+
+
 
 /* przyciski dodawania kolejnych szklanek */
 
 .capacity, .myOwnCapacity {
   margin: 10px;
   box-shadow: 0px 1px 0px 2px #9fb4f2;
-  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background: linear-gradient(to bottom, #7892c2 5%, var(--mainColor) 100%);
   background-color: #7892c2;
   border-radius: 25px;
   border: 1px solid #4e6096;
@@ -65,8 +84,8 @@ body {
   text-shadow: 0px 1px 0px #283966;
 }
 .capacity:hover, .myOwnCapacity:hover {
-  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-  background-color: #476e9e;
+  background: linear-gradient(to bottom, var(--mainColor) 5%, #7892c2 100%);
+  background-color: var(--mainColor);
 }
 .capacity:active, .myOwnCapacity:active {
   position: relative;
@@ -86,7 +105,7 @@ body {
     width: 50%;
     appearance: none;
     border-radius: 25px;
-    color: #476e9e;
+    color: var(--mainColor);
     font-size: 1.5em;
     padding: 10px 20px;
 }
@@ -101,7 +120,7 @@ body {
 
 .hello {
   font-size: 24px;
-  border: 3px solid #476e9e;
+  border: 3px solid var(--mainColor);
   border-radius: 25px;
   padding: 10px 30px;
   margin-bottom: 25px;
@@ -111,7 +130,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  border: 3px solid #476e9e;
+  border: 3px solid var(--mainColor);
   border-radius: 25px;
   padding: 10px 30px;
   margin-bottom: 25px;
@@ -119,17 +138,26 @@ body {
 
 .userDataHeader {
   font-weight: bold;
-  color: #476e9e
+  color: var(--mainColor);
 }
 
 .myGoals {
-  border: 3px solid #476e9e;
+  border: 3px solid var(--mainColor);
   border-radius: 25px;
   padding: 10px 30px;
 }
 
 .capacityGoal {
   font-weight: bold;
+}
+
+.soFar, .userGoalSpan {
+  font-size: 22px;
+  color: var(--mainColor);
+}
+
+.userGoalHeader {
+  font-size: 18px;
 }
 
 /* dodane szklanki wody */
@@ -144,7 +172,7 @@ body {
 }
 
 .glassOfWater {
-  border: 1px solid #476e9e;
+  border: 1px solid var(--mainColor);
   padding: 5px;
   margin: 5px 10px 5px 0;
   border-radius: 10px;
