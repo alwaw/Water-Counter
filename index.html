@@ -8,25 +8,29 @@
   </head>
   <body>
     <div class="mainField">
-      <div class = progressBarField>
+      <div class="progressBarField">
         <span class="progressBarPercent"></span>
-      <div class="measure">
-        
-        <div class="progressBar">
-          
+        <div class="measure">
+          <div class="progressBar"></div>
         </div>
-        
       </div>
-    </div>
 
       <div class="addWater">
-        <button class="capacity"><span class="capacityValue">250 ml</span></button>
-        <button class="capacity"><span class="capacityValue">300 ml</span></button>
-        <button class="capacity"><span class="capacityValue">400 ml</span></button>
-        <button class="capacity"><span class="capacityValue"></span>500 ml</button>
-        <div class = "addOwnCapacity">
-        <input type="text" class="ownCapacity" placeholder="ml" />
-        <button class="myOwnCapacity">Dodaj</button>
+        <button class="capacity">
+          <span class="capacityValue">250 ml</span>
+        </button>
+        <button class="capacity">
+          <span class="capacityValue">300 ml</span>
+        </button>
+        <button class="capacity">
+          <span class="capacityValue">400 ml</span>
+        </button>
+        <button class="capacity">
+          <span class="capacityValue"></span>500 ml
+        </button>
+        <div class="addOwnCapacity">
+          <input type="text" class="ownCapacity" placeholder="ml" />
+          <button class="myOwnCapacity">Dodaj</button>
         </div>
       </div>
 
@@ -42,25 +46,34 @@
         </div>
 
         <div class="myGoals">
-          <div class = "userGoalHeader">
-          Udało Ci się wypić <span class="soFar"></span> z <span class="userGoalSpan"></span>.
-        </div>
+          <div class="userGoalHeader">
+            Udało Ci się wypić <span class="soFar"></span> z
+            <span class="userGoalSpan"></span>.
+          </div>
           <span class="capacityGoalHeader"
-            ><br>Twoje dzienne zapotrzebowanie na wodę wynosi
+            ><br />Twoje dzienne zapotrzebowanie na wodę wynosi
             <span class="capacityGoal"></span>.
           </span>
           <span>
-            <br> Twoje dzisiejsze spożycie wody:
+            <br />
+            Twoje dzisiejsze spożycie wody:
           </span>
-          <ul class="todayIDrink">
-            
-          </ul>
+          <ul class="todayIDrink"></ul>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modalContent">
+          
+          <p class="congratulations">
+            Świetnie! Udało Ci się wypić dzienną zalecaną ilość wody! <br />
+            Oto kotek dla Ciebie:
+          </p>
+          <img src="" alt="" class="happyCat" />
+          <button class="modalClose">Jestem super!</button>
         </div>
       </div>
     </div>
 
     <script type="module" src="main.js"></script>
-    
-
   </body>
 </html>

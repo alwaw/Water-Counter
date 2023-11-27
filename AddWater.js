@@ -41,6 +41,7 @@ export class AddWater {
       this.progressBarDiv.style.height = "100%";
       
     }
+    
   }
 
   addToHeader(selectedCapacity, userGoal) {
@@ -52,6 +53,12 @@ export class AddWater {
 
     this.soFarSpan.textContent = this.currentProgressInML + " ml";
     this.userGoalSpan.textContent = userGoal + " ml";
+    
+  }
+
+  giveCurrentProgress() {
+    console.log(this.currentProgress);
+    return this.currentProgress;
     
   }
 }

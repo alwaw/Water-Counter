@@ -1,5 +1,6 @@
 import { UserData } from "./UserData.js";
 import { AddWater } from "./AddWater.js";
+import { Modal } from "./Modal.js";
 
 export class StartWaterMeasure {
   constructor() {
@@ -43,6 +44,7 @@ export class StartWaterMeasure {
           this.capacityGoal
         );
         this.addWater.addToHeader(this.selectedCapacity, this.capacityGoal);
+        this.shouldIGiveYouACat()
       });
     });
 
@@ -50,15 +52,27 @@ export class StartWaterMeasure {
     this.myOwnCapacityBtn.addEventListener("click", () => {
       const capacityInput = this.myOwnCapacityInput.value;
       if (isNaN(capacityInput) === true || capacityInput <= 0) {
-        alert("Proszę o wpisanie poprawnej pojemności.")
+        alert("Proszę o wpisanie poprawnej pojemności.");
       } else {
-      this.addWater.addWaterToTheList(capacityInput+" ml");
-      this.addWater.addWaterToProgressBar(capacityInput, this.capacityGoal);
-      this.addWater.addToHeader(capacityInput, this.capacityGoal);
-      this.myOwnCapacityInput.value = "";
+        this.addWater.addWaterToTheList(capacityInput + " ml");
+        this.addWater.addWaterToProgressBar(capacityInput, this.capacityGoal);
+        this.addWater.addToHeader(capacityInput, this.capacityGoal);
+        this.myOwnCapacityInput.value = "";
+        this.shouldIGiveYouACat()
       }
     });
-
-
     
-}}
+      // klasa Modal - potrzebuję flagi, która monitoruje, czy dzienna podaż wody przekroczyła/jest równa 100%
+      this.catFlag = false;
+
+  }
+
+  shouldIGiveYouACat() {
+    if (this.addWater.giveCurrentProgress() >= 100 && this.catFlag === false) {
+      this.catFlag = true;
+      const modal = new Modal();
+    }
+    
+  }
+
+}

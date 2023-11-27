@@ -178,6 +178,25 @@ body {
   border-radius: 10px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+}
+
+.modal-content {
+  width: 50%;
+}
+
+
+.modalClose:hover, .modalClose:focus {
+  cursor: pointer;
+}
+
+.happyCat {
+  width: 250px;
+}
+
 
 
 

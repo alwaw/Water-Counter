@@ -12,6 +12,8 @@ const letsDrinkWater = new StartWaterMeasure();
 
 //dodać przypomnienia
 
+//w momencie załadowania strony ukryć tekst "Udało ci się wypić..."
+
 
 
 //ogarnąć css
