@@ -9,9 +9,9 @@ body {
 
 /* główne pole */
 .mainField {
-  width: 1200px;
+  width: 1000px;
   display: grid;
-  grid-template-columns: 100px 0.5fr 1fr;
+  grid-template-columns: 100px 300px 450px;
   grid-template-areas: "measure addWater userData";
   grid-column-gap: 20px;
   justify-content: space-between;
@@ -42,6 +42,7 @@ body {
   color: var(--mainColor);
   font-size: 25px;
   
+  
 }
 
 .measure {
@@ -67,7 +68,7 @@ body {
 
 /* przyciski dodawania kolejnych szklanek */
 
-.capacity, .myOwnCapacity {
+.capacity, .myOwnCapacity, .modalClose {
   margin: 10px;
   box-shadow: 0px 1px 0px 2px #9fb4f2;
   background: linear-gradient(to bottom, #7892c2 5%, var(--mainColor) 100%);
@@ -83,11 +84,11 @@ body {
   text-decoration: none;
   text-shadow: 0px 1px 0px #283966;
 }
-.capacity:hover, .myOwnCapacity:hover {
+.capacity:hover, .myOwnCapacity:hover, .modalClose:hover {
   background: linear-gradient(to bottom, var(--mainColor) 5%, #7892c2 100%);
   background-color: var(--mainColor);
 }
-.capacity:active, .myOwnCapacity:active {
+.capacity:active, .myOwnCapacity:active, .modalClose:active {
   position: relative;
   top: 1px;
 }
@@ -103,7 +104,6 @@ body {
 
 .ownCapacity {
     width: 50%;
-    appearance: none;
     border-radius: 25px;
     color: var(--mainColor);
     font-size: 1.5em;
@@ -178,14 +178,41 @@ body {
   border-radius: 10px;
 }
 
+/* modal - okienko z gratulacjami */
+
+.congratulations {
+  text-align: center;
+  font-size: 18px;
+  
+}
+
 .modal {
   display: none;
   position: fixed;
+  left: 50%;
+  top: 20%;
+  padding: 30px 60px;
   z-index: 1;
+  background-color: white;
+  transform: translate(-50%, -20%);
+  border: 5px solid var(--mainColor);
+  border-radius: 10px;
+  box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
 }
 
-.modal-content {
-  width: 50%;
+.modalContent {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.modalClose {
+  width: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -195,6 +222,7 @@ body {
 
 .happyCat {
   width: 250px;
+  text-align: center;
 }
 
 

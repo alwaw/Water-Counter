@@ -9,6 +9,8 @@ export class AddWater {
     this.userGoalSpan = document.querySelector(".userGoalSpan");
     this.progressBarPercentSpan = document.querySelector(".progressBarPercent"); 
     this.currentProgressInML = 0;
+    this.soFarSpan.textContent = 0;
+    this.userGoalSpan.textContent = 0;
   }
 
   addWaterToTheList(selectedCapacity) {
