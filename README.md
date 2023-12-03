@@ -11,6 +11,7 @@
 
  Ostylowanie jest minimalne. 
  W aplikacji został również wykorzystany fetch - jeszcze go do końca nie opanowałam na tyle, by zoptymalizować kod w tym punkcie i przyspieszyć wczytywanie obrazka (niestety ta chwila oczekiwania jest bardzo wyraźna). 
+ Strona nie jest responsywna - przygotowałam wersję jedynie na desktopy. 
 
  Obecnie aplikacja (komentarze w kodzie oraz niniejszy dokument) czekają na przetłumaczenie na język angielski.
  Na chwilę obecną nie planuję rozbudowywać tej aplikacji. 
