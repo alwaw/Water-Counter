@@ -7,6 +7,7 @@
  Gdy uda nam się spożyć 100% dziennego zapotrzebowania na wodę, wyświetla się okienko dialogowe (modal) z gratulacjami i kotkiem (kotek pobrany z thecatapi.com).
 
  Aplikacja ta ma na celu przede wszystkim przećwiczenie OOP i jako taka sprawdziła się naprawdę dobrze - co innego tworzyć taką apkę podczas kursu, gdzie ktoś za nas wymyślił cały core, a co innego zaplanować ją od A do Z samodzielnie.  
+ Samo programowanie obiektowe - na tym poziomie skomplikowania - bardzo mi się spodobało. Wymusiło przemyślenie działania całej aplikacji zanim postawiłam pierwszy znak w vsc i już samo opracowanie, jakich klas potrzebuję i jakie mają być między nimi zależności było bardzo fajnym ćwiczeniem. Na poziomie mało rozbudowanej aplikacji OOP było bardzo przyjemnym doświadczeniem. 
 
  Ostylowanie jest minimalne. 
  W aplikacji został również wykorzystany fetch - jeszcze go do końca nie opanowałam na tyle, by zoptymalizować kod w tym punkcie i przyspieszyć wczytywanie obrazka (niestety ta chwila oczekiwania jest bardzo wyraźna). 
