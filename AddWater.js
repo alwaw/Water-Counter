@@ -23,7 +23,7 @@ export class AddWater {
   addWaterToProgressBar(selectedCapacity, userGoal) {
     // konwersja ze stringa na number
     const glassOfWater = parseInt(selectedCapacity);
-    Number(glassOfWater);
+    
     // wyliczam, jaki procent sugerowanej ilości wody został już przyjęty
     let percentOfGoal = Math.round((glassOfWater / userGoal) * 100);
     console.log(percentOfGoal + "%");
@@ -48,11 +48,7 @@ export class AddWater {
 
   addToHeader(selectedCapacity, userGoal) {
     let selectedCapacityToMl = parseInt(selectedCapacity);
-
-    Number(selectedCapacity);
-
     this.currentProgressInML += selectedCapacityToMl;
-
     this.soFarSpan.textContent = this.currentProgressInML + " ml";
     this.userGoalSpan.textContent = userGoal + " ml";
     

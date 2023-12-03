@@ -19,8 +19,8 @@ export class StartWaterMeasure {
     this.capacityGoal = this.userData.calcUserGoal(this.weight);
 
     // pobranie danych dla klasy AddWater
-    this.capacityBtn = document.querySelectorAll(".capacity");
-    this.capacityBtns = [...this.capacityBtn];
+    this.capacityBtns = document.querySelectorAll(".capacity");
+    this.capacityBtns = [...this.capacityBtns];
     this.progressBarDiv = document.querySelector(".progressBar");
     this.myOwnCapacityInput = document.querySelector(".ownCapacity");
     this.myOwnCapacityBtn = document.querySelector(".myOwnCapacity");
@@ -34,9 +34,8 @@ export class StartWaterMeasure {
 
     // pobieram wybraną pojemność:
 
-    this.capacityBtn.forEach((button) => {
+    this.capacityBtns.forEach((button) => {
       button.addEventListener("click", () => {
-        // console.log(button.textContent);
         this.selectedCapacity = button.textContent;
         this.addWater.addWaterToTheList(this.selectedCapacity);
         this.addWater.addWaterToProgressBar(
