@@ -1,3 +1,5 @@
+Live wersja: https://alwaw.github.io/Water-Counter/
+
 # Water Counter
  Prosta aplikacja do mierzenia ilości wypitej wody. 
 
